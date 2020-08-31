@@ -21,6 +21,7 @@ Open the *face_mask_detection_cnn.ipynb* notebook to run the cells.
 
 ## Resources
 https://deeplizard.com/learn/video/DEMmkFC6IGM<br>
+https://deeplizard.com/learn/video/ZjM_XQa5s6s<br>
 https://stanford.edu/~shervine/blog/keras-how-to-generate-data-on-the-fly<br>
 https://danijar.com/tips-for-training-recurrent-neural-networks/
 https://www.researchgate.net/post/When_can_Validation_Accuracy_be_greater_than_Training_Accuracy_for_Deep_Learning_Models
