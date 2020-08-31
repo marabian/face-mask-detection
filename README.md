@@ -7,10 +7,11 @@ The goal of this project is to detect the presence of face masks in images.
 ## How to run
 Download the dataset from [here](https://www.kaggle.com/wobotintelligence/face-mask-detection-dataset).<br>
 
+To process the data, run
 ```
 python3 split.py <path to images> <path to csv file> <train %> <valid %> <test %>
 ```
-This script uses the bounding box data provided by the Kaggle dataset (in train.csv) to crop the raw images and generates new images of faces. <br>The images are placed in a new *data/* directory under *train/*, *valid/*, and *test/*.<br><br>
+This script uses the bounding box data provided by the Kaggle dataset (in train.csv) to crop the raw images and generates new images of faces. <br>The images are placed in a new *data/* directory under *train/* *valid/* and *test/*.<br><br>
 To train the model and perform inference on test data, run 
 ```
 jupyter notebook
