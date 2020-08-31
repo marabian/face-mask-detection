@@ -24,3 +24,4 @@ https://deeplizard.com/learn/video/DEMmkFC6IGM<br>
 https://stanford.edu/~shervine/blog/keras-how-to-generate-data-on-the-fly<br>
 https://danijar.com/tips-for-training-recurrent-neural-networks/
 https://www.researchgate.net/post/When_can_Validation_Accuracy_be_greater_than_Training_Accuracy_for_Deep_Learning_Models
+https://medium.com/intelligentmachines/convolutional-neural-network-and-regularization-techniques-with-tensorflow-and-keras-5a09e6e65dc7
