@@ -113,6 +113,6 @@ Non-trainable params: 0
 https://deeplizard.com/learn/video/DEMmkFC6IGM<br>
 https://deeplizard.com/learn/video/ZjM_XQa5s6s<br>
 https://stanford.edu/~shervine/blog/keras-how-to-generate-data-on-the-fly<br>
-https://medium.com/intelligentmachines/convolutional-neural-network-and-regularization-techniques-with-tensorflow-and-keras-5a09e6e65dc7
-https://cv-tricks.com/keras/fine-tuning-tensorflow/
+https://medium.com/intelligentmachines/convolutional-neural-network-and-regularization-techniques-with-tensorflow-and-keras-5a09e6e65dc7<br>
+https://cv-tricks.com/keras/fine-tuning-tensorflow/<br>
 https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html
