@@ -13,11 +13,11 @@ python3 split.py <path to images> <path to csv file> <train %> <valid %> <test %
 ```
 The script uses the bounding box data provided by the Kaggle dataset (in train.csv) to crop the raw images and generates new images of faces. <br>The images are placed in a new *data/* directory under *train/* *valid/* or *test/* in either *mask/* or *no-mask/* based on the class information provided by train.csv. The last 3 arguments specify the split ratio for training/validation/test sets.<br><br>
 
-To train the model and perform inference on test data, run 
+To train the model and perform inference on test data, run
 ```
 jupyter notebook
 ``` 
-Open the *face_mask_detection_cnn.ipynb* notebook to run the cells.
+and open notebook *face_mask_detection_cnn.ipynb* or open in Google Colab to run the cells.
 
 ## Resources
 https://deeplizard.com/learn/video/DEMmkFC6IGM<br>
