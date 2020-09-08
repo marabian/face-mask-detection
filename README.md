@@ -105,7 +105,7 @@ Non-trainable params: 0
 
 ## Strategies for overfitting
 * Augmented images to increase size of training set (horizontal flip, slight rotations).
-* Used aggressive dropout regularization on Fully-connected layers. I noticed this helped reduce the generalization error when training.
+* Used aggressive dropout regularization on Fully-connected layers. I noticed this helped reduce the gap between training and validation losses.
 * Mess around with the number of layers/nodes to reduce overfitting the training data.
 
 
