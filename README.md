@@ -109,6 +109,8 @@ Non-trainable params: 0
 * Used aggressive dropout regularization on Fully-connected layers. I noticed this helped reduce the gap between training and validation losses.
 * Mess around with the number of layers/nodes to reduce overfitting the training data.
 
+## Ideas for deployment
+Build a basic web front-end which allows the user to take a picture using their webcam, and then classifies the image. The image can contain multiple persons, and the app should draw a colored bounding box around each person's face. The color will indicate the presence of a face mask detected by the machine learning model. Do the same for video (user can record a video, which will be processed and return a video which contains frames with colored bounding boxes.
 
 ## Resources
 https://deeplizard.com/learn/video/DEMmkFC6IGM<br>
