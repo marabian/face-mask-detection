@@ -110,7 +110,9 @@ Non-trainable params: 0
 * Mess around with the number of layers/nodes to reduce overfitting the training data.
 
 ## Ideas for deployment
-Build a basic web front-end which allows the user to take a picture using their webcam, and then classifies the image. The image can contain multiple persons, and the app should draw a colored bounding box around each person's face. The color will indicate the presence of a face mask detected by the machine learning model. Do the same for video (user can record a video, which will be processed and return a video which contains frames with colored bounding boxes.
+Build a basic web front-end which allows the user to take a picture using their webcam, and then classifies the image. The image can contain multiple persons, and the app should label/draw a colored bounding box around each person's face. The color will indicate the presence of a face mask detected by the machine learning model. 
+
+Do the same for videos for real-time face mask detection. User can record a video, which will be processed and return a video which contains frames with labeled/colored bounding boxes.
 
 ## Resources
 https://deeplizard.com/learn/video/DEMmkFC6IGM<br>
