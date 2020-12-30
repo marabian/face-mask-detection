@@ -5,20 +5,14 @@ Dataset from [Kaggle Face Mask Detection Dataset](https://www.kaggle.com/wobotin
 ## Objective
 The goal of this project is to train a convolutional neural network which detects the presence of face masks in images.<br> Given an input image, the model will perform inference and output a prediction, a vector containing two probabilities -  P(mask) and P(no-mask). We will return the class that has highest probability.
 
-## How to replicate
-Download the dataset from [here](https://www.kaggle.com/wobotintelligence/face-mask-detection-dataset).<br>
+## How to run for inference
+* Serve TensorFlow Model using Tensorflow Serving
+    `docker run -p 8501:8501 --name "face-mask-detection" -v face-mask-detection/saved_model/third-try/:/models/face-mask-detection/1 -e MODEL_NAME="face-mask-detection" tensorflow/serving`
 
-To process the data, run
-```
-python3 split.py <path to images> <path to csv file> <train %> <valid %> <test %>
-```
-The script uses the bounding box data provided by the Kaggle dataset (in train.csv) to crop the raw images and generates new images of faces. <br>The images are placed in a new *data/* directory under *train/* *valid/* or *test/* in either *mask/* or *no-mask/* based on the class information provided by train.csv. The last 3 arguments specify the split ratio for training/validation/test sets.<br><br>
+* Run Flask server to start web app for inference
+    `python3 app.py`
 
-To train the model and perform inference on test data, run
-```
-jupyter notebook
-``` 
-and open notebook *face_mask_detection_cnn.ipynb* or open in Google Colab to run the cells.
+* Go to localhost and upload image file to obtain prediction
 
 ## Architecture
 **Model from scratch** - 93% accuracy on test set
@@ -113,6 +107,14 @@ Non-trainable params: 0
 Build a basic web front-end which allows the user to take a picture using their webcam, and then classifies the image. The image can contain multiple persons, and the app should label/draw a colored bounding box around each person's face. The color will indicate the presence of a face mask detected by the machine learning model. 
 
 Do the same for videos for real-time face mask detection. User can record a video, which will be processed and return a video which contains frames with labeled/colored bounding boxes.
+
+
+## Deployment
+* Use Docker image called Tensorflow Serving to create Docker instance which will serve the model.
+* When we instantiate the Docker instance, will specify where the model is on our disk,
+and where it should be in the Docker instance, which port to expose on Docker host, then can simply make calls to that port on localhost and send data/get predictions.
+* The Docker image creates an instance of Tensorflow Server which will serve the model.
+* Directory where model will live in Docker instance must match **model_name** environment variable set in Docker instance.
 
 ## Resources
 https://deeplizard.com/learn/video/DEMmkFC6IGM<br>

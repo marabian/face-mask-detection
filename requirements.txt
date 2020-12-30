@@ -87,3 +87,5 @@ wrapt==1.12.1
 zipp==3.1.0
 jupyterlab==2.2.0
 opencv
+flask
+flask-bootstrap
