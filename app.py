@@ -11,6 +11,11 @@ Bootstrap(app)
 """
 Routes
 """
+# Testing URL
+@app.route('/hello/', methods=['GET', 'POST'])
+def hello_world():
+    return("Hello World!")
+
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
@@ -22,8 +27,8 @@ def index():
             image_path = os.path.join('static', uploaded_file.filename) 
             # save file
             uploaded_file.save(image_path)
-            # perform inference
-            class_name = inference.get_prediction(image_path)
+            # perform image preprocessing and get inference
+            class_name = inference.get_preds(image_path)
             print('CLASS NAME=', class_name)
             result = {
                 'class_name': class_name,
